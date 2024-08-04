@@ -3,7 +3,6 @@
 * {
     margin: 0;
     padding: 0;
-    background-color: hsl(217, 28%, 15%);
     color: #fff;
     Font-size: 14px;
     font-family:sans-serif;
@@ -11,7 +10,56 @@
    
 }
 
-ul {
+.color-fondo-darkblue1{
+    background-color: hsl(217, 28%, 15%);
+}
+.color-fondo-darkblue2{
+    background-color: hsl(218, 28%, 13%)
+}
+
+
+
+.seccion-introduccion {
+    padding-bottom: 300px; 
+    position: relative;
+    padding-bottom: 200px; 
+    text-align: center;
+    z-index: 1;
+}
+
+.seccion-introduccion::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 70%;
+    max-width: auto;
+    background-image: url("../imagenes/bg-curvy-desktop.svg");
+    background-position: bottom;
+    background-size: cover;
+    z-index: -1;
+}
+
+
+
+
+/** Efecto oscuro */
+.seccion-restaurante::before, .seccion-ofertas::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+}
+
+.seccion-restaurante *, .seccion-ofertas *{
+    position: relative;
+}
+
+ul{
     list-style-type: none;
     display: flex;
     padding: 0;
@@ -29,7 +77,11 @@ ul li a {
 }
 
 
-
+.tamaño-logo{
+    width: 100%;
+    height: auto;
+    max-width: 80px;
+}
 .tamaño-img-portada{
     width: 100%;
     height: auto;
@@ -40,3 +92,4 @@ ul li a {
     padding: 10px 50px;
 
 }
+

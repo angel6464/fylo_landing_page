@@ -12,58 +12,67 @@
 <body> 
 
     <!--Menu-->
-  <header >
-    <nav class="navbar bg-body-tertiary m-0 p-0 border-0">
-        <div class="container-fluid p-5 ">
-          <a class="navbar-brand "><img src="./imagenes/logo.svg" alt="este es el logo" class="img-fluid tamaño-logo"></a>
-          <ul class="">
-            <li><a href="#features" class="text-white ">Features</a></li>
-            <li><a href="#team" class="text-white ">Team</a></li>
-            <li><a href="#sign-in" class="text-white ">Sign In</a></li>
-            </ul>
-        </div>
-      </nav>
-  </header>
+    <!--Menu-->
+    <header class="text-center sticky-top color-fondo-darkblue1">
+        <nav class="navbar m-0 p-0 border-0">
+            <div class="container-fluid p-4 d-flex">
+                <a class="navbar-brand"><img src="./imagenes/logo.svg" alt="este es el logo" class="img-fluid tamaño-logo"></a>
+                <ul class="d-flex list-unstyled m-0">
+                    <li class="mx-2"><a href="#features" class="text-white nav-link">Features</a></li>
+                    <li class="mx-2"><a href="#team" class="text-white nav-link">Team</a></li>
+                    <li class="mx-2"><a href="#sign-in" class="text-white nav-link">Sign In</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
 
 
      <!-- Contenedor -->
   <main>
        <!--Introduccion principal -->
-    <section>
+    <section class="seccion-introduccion color-fondo-darkblue1 pt-2">
         <img src="./imagenes/illustration-intro.png" alt="Esta es la introduccion" class="img-fluid mx-auto d-block tamaño-img-portada" >
         <h1 class="text-center">All your files in one secure location.<br> accessible anywhere.</h1>
         <p class="text-center">Fylo stores all your most important files in one secure location.<br>Access them wherever you need, share and collaborate with <br>friends family, and co-workers</p>
         <button  type="button" class="btn btn-info mx-auto d-block text-white rounded-pill px-custom fw-bold">Get Started</button>
     </section>
 
+
+
        <!-- Articulos divididos en cuadricula de 4-->
-    <section>
-        <article>
+    <section class="text-center color-fondo-darkblue2 ">
+
+          <!--Primer fila con 2 articulos-->
+     <div class="row">
+        <article class="col-sm-12 col-md">
             <img src="./imagenes/icon-access-anywhere.svg" alt="iconono acceder a cualquier lugar">
             <h2>Acces your files, anywhere</h2>
-            <p>The hability to use a smartphone, tablet or computer
-                to access your acount means your files follow you everywhere.</p>
+            <p>The hability to use a smartphone, tablet or computer<br>
+                to access your acount means your files follow you<br> everywhere.</p>
         </article>
-
-        <article>
+        <article class="ccol-sm-12 col-md ">
             <img src="./imagenes/icon-security.svg" alt="Icono seguridad">
             <h2>Security you can trust</h2>
-            <p>2-factor authentication and user-controlled encryption are 
-                just a couple of the security feactures we allow to help secure your files
+            <p>2-factor authentication and user-controlled encryption are<br> 
+                just a couple of the security feactures we allow to help<br> secure your files
             </p>
         </article>
-
-        <article>
-            <img src="" alt="">
-            <h2>Real-ime collaboration</h2>
-            <p>Securely share files and folders with friends, family and colleagues for live collaboration. No email atttachments required</p>
-        </article>
-
-        <article>
+     </div>
+         <!--Segunda fila con 2 articulos-->
+        <div class="row m-4">
+        <article class="col-sm-12 col-md ">
             <img src="./imagenes/icon-collaboration.svg" alt="Icono colaboracion">
-            <h2>Store any type of file</h2>
-            <p>Whether you'are sharing holidays photos or co-workersdocuments , Fylo has you covered allowing for all file types to be securely stored and shared.</p>
+            <h2>Real-ime collaboration</h2>
+            <p>Securely share files and folders with friends, family and<br> colleagues for live collaboration. No email atttachments<br> required</p>
         </article>
+
+        <article class="col-sm-12 col-md">
+            <img src="./imagenes/icon-any-file.svg" alt="Icono carpeta">
+            <h2>Store any type of file</h2>
+            <p>Whether you'are sharing holidays photos or work<br> documents , Fylo has you covered allowing for all file<br> types to be securely stored and shared.</p>
+        </article>
+     </div>
+
     </section>
 
 
