@@ -7,18 +7,25 @@
     Font-size: 14px;
     font-family:sans-serif;
    font-weight: 400,700;
+   box-sizing: border-box;
+   overflow-x: hidden; /* Oculta el desbordamiento horizontal */
    
 }
 
+
+/**Color de fondo blue palido*/
 .color-fondo-darkblue1{
     background-color: hsl(217, 28%, 15%);
 }
+
+/**Color de fondo blue oscuro*/
 .color-fondo-darkblue2{
-    background-color: hsl(218, 28%, 13%)
+    background-color: hsl(218, 28%, 13%);
+    color:#fff;
 }
 
 
-
+/**Colocamos z index para la imagen svg de fondo */
 .seccion-introduccion {
     padding-bottom: 300px; 
     position: relative;
@@ -27,6 +34,7 @@
     z-index: 1;
 }
 
+/** before para colocar la imagen de fondo */
 .seccion-introduccion::before {
     content: "";
     position: absolute;
@@ -42,23 +50,7 @@
 }
 
 
-
-
-/** Efecto oscuro */
-.seccion-restaurante::before, .seccion-ofertas::before{
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: rgba(0, 0, 0, 0.5);
-    width: 100%;
-    height: 100%;
-}
-
-.seccion-restaurante *, .seccion-ofertas *{
-    position: relative;
-}
-
+/** ningun estilo y se pongan en linea ul */
 ul{
     list-style-type: none;
     display: flex;
@@ -66,30 +58,55 @@ ul{
     margin: 0;
 }
 
+
+
 ul li {
     margin-right: 20px;
-    text-decoration: none;
     transition: color 0.3s;
 }
 
+/** Ninguna decoracion de las listas*/
 ul li a {
     text-decoration: none;
 }
 
-
+/**Para hacer mas pequeño el logo */
 .tamaño-logo{
     width: 100%;
     height: auto;
     max-width: 80px;
 }
+
+/**Tamaño de la imagen portada */
 .tamaño-img-portada{
     width: 100%;
     height: auto;
-    max-width: 450px;
+    max-width: 580px;
 }
 
-.px-custom {
+/** para espaciado del boton para que se vea mas grande*/
+.px-custom-boton {
     padding: 10px 50px;
 
 }
 
+/** Esto para la caja*/
+.espacio-caja{
+    padding-top: 80px;
+    padding-bottom: 100px;
+}
+
+/** Espacio para el texto*/
+.espacio-caja .espacio-caja-texto{
+    padding-top: 100px;
+}
+
+/**tamaño de letra del h3*/
+.espacio-caja .espacio-caja-texto h3{
+    font-size: 50px;
+}
+
+/** tamaño de letra para el parrafo*/
+.espacio-caja .espacio-caja-texto p{
+    font-size: 20px;
+}
