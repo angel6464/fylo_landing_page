@@ -5,15 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-   
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
     <link rel="stylesheet" href="./estilos/style.css">
   
 </head>
 <body> 
 
     <!--Menu-->
-    <!--Menu-->
     <header class="text-center sticky-top color-fondo-darkblue1">
+        <div class="container">
         <nav class="navbar m-0 p-0 border-0">
             <div class="container-fluid p-4 d-flex">
                 <a class="navbar-brand"><img src="./imagenes/logo.svg" alt="este es el logo" class="img-fluid tamaño-logo"></a>
@@ -24,6 +25,7 @@
                 </ul>
             </div>
         </nav>
+    </div>
     </header>
 
 
@@ -31,17 +33,20 @@
   <main>
        <!--Introduccion principal -->
     <section class="seccion-introduccion color-fondo-darkblue1 pt-2">
+
+        <div class="container">
         <img src="./imagenes/illustration-intro.png" alt="Esta es la introduccion" class="img-fluid mx-auto d-block tamaño-img-portada" >
         <h1 class="text-center">All your files in one secure location.<br> accessible anywhere.</h1>
         <p class="text-center">Fylo stores all your most important files in one secure location.<br>Access them wherever you need, share and collaborate with <br>friends family, and co-workers</p>
         <button  type="button" class="btn btn-info mx-auto d-block text-white rounded-pill px-custom-boton fw-bold">Get Started</button>
+        </div>
     </section>
 
 
 
        <!-- Articulos divididos en cuadricula de 4-->
     <section class="text-center color-fondo-darkblue2 ">
-
+        <div class="container">
                     <!--Primer fila con 2 articulos-->
                 <div class="row p-5">
                     <article class="col-sm-12 col-md">
@@ -72,20 +77,23 @@
                         <p>Whether you'are sharing holidays photos or work<br> documents , Fylo has you covered allowing for all file<br> types to be securely stored and shared.</p>
                     </article>
                 </div>
-
+        </div>
     </section>
 
 
-       <!--Seccion -->
+       
+ <!--SEGUNDA SECCION-->
+
            <!--espacio-caja para darle un espacio top -->
-    <section class="color-fondo-darkblue2 espacio-caja">
+    <section class="color-fondo-darkblue2 espacio-caja-team">
+        <div class="container">
             <div class="row p-5">
                 <article class="col-sm-12 col-md">
                     <img src="./imagenes/illustration-stay-productive.png" alt="Icono carpeta" class="rounded mx-auto d-block">
                 </article>
                 
  <!--espacio-caja-texto para darle un espacio x,y de letra  -->
-                <article class="col-sm-12 col-md espacio-caja-texto ">
+                <article class="col-sm-12 col-md espacio-caja-texto-team ">
                     <h3>Stay productive,<br> wherever you are</h3>
                     <p>Never let location be an issue when accesign your fules. Fylo has you<br> covered for all of your file storage needs.
                     </p>
@@ -93,43 +101,153 @@
                     <a href="#works">See how Fylo works</a>
                 </article>
             </div>
-    </section>
-
-       <!-- Comentaios de personas-->
-       <section class="color-fondo-darkblue2">
-        <div class="row p-5">
-            <div class="col-12 col-md m-4">
-                <div class="card w-100 color-fondo-darkblue2">
-                    <div class="card-body m-5">
-                      <h5 >Card title</h5>
-                      <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                      <a href="#" class="btn btn-primary">Button</a>
-                    </div>
-                </div>
-            </div>
-    
-            <div class="col-12 col-md m-4 ">
-                <div class="card w-100 color-fondo-darkblue2">
-                    <div class="card-body m-5">
-                      <h5>Card title</h5>
-                      <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                      <a href="#" class="btn btn-primary">Button</a>
-                    </div>
-                </div>
-            </div>
-    
-            <div class="col-12 col-md m-4">
-                <div class="card w-100 color-fondo-darkblue2">
-                    <div class="card-body m-5">
-                      <h5>Card title</h5>
-                      <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                      <a href="#" class="btn btn-primary">Button</a>
-                    </div>
-                </div>
-            </div>
         </div>
     </section>
+
+
+       <!-- TERCERA  SECCION : Comentarios y cargos de personas-->
+    <section class="color-fondo-darkblue2 comentarios-personas">
+
+        <div class="container">
+        <div class="row">
+            <div class="col-12 col-md">
+                <div class="card w-100 color-fondo-darkblue3 shadow">
+                    <div class="card-body p-4">
+                      <p class="card-text">Fylo has impropved our team productivity by<br>
+                        an order of magnitude. Since making the<br>
+                        switch our team has become a well-oiled<br>
+                        collaboration machine.</p>
+                          <!-- foto y nombres-->
+                        <div class="container p-0 m-0">
+                            <div class="row">
+                              <div class="col-2"><img src="./imagenes/profile-1.jpg" alt="perfil 1"  class="img-fluid img-thumbnail rounded-circle"></div>
+                              <div class="col-10 "><h6>Satisch Patel</h6><p class="p-ocupacion">Founder & CEO, Huddle</p></div>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="col-12 col-md">
+                <div class="card w-100 color-fondo-darkblue3 shadow">
+                    <div class="card-body p-4">
+                        <p class="card-text">Fylo has impropved our team productivity by<br>
+                          an order of magnitude. Since making the<br>
+                          switch our team has become a well-oiled<br>
+                          collaboration machine.</p>
+                            <!-- foto y nombres-->
+                          <div class="container p-0 m-0">
+                              <div class="row">
+                                <div class="col-2"><img src="./imagenes/profile-1.jpg" alt="perfil 1"  class="img-fluid img-thumbnail rounded-circle"></div>
+                                <div class="col-10"><h6>Bruce McKenzie</h6><p class="p-ocupacion">Founder & CEO, Huddle</p></div>
+                              </div>
+                            </div>
+                      </div>
+                  </div>
+              </div>
+    
+            <div class="col-12 col-md">
+                <div class="card w-100 color-fondo-darkblue3 shadow">
+                    <div class="card-body p-4">
+                        <p class="card-text">Fylo has impropved our team productivity by<br>
+                          an order of magnitude. Since making the<br>
+                          switch our team has become a well-oiled<br>
+                          collaboration machine.</p>
+                            <!-- foto y nombres-->
+                          <div class="container p-0 m-0">
+                              <div class="row"> 
+                                <div class="col-2"><img src="./imagenes/profile-1.jpg" alt="perfil 1"  class="img-fluid img-thumbnail rounded-circle"></div>
+                                <div class="col-10"><h6>Iva Boyd</h6><p class="p-ocupacion">Founder & CEO, Huddle</p></div>
+                              </div>
+                          </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+
   </main>
+
+  <footer class="color-fondo-darkblue4 ">
+    <!-- PEQUEÑO FORMULARIO ANTES DEL FOOTER-->
+    <section class="color-fondo-darkblue2 "> 
+       
+           <div class=" position-relative ">
+               <div class="row">
+                   <div class="col-12 ">
+                       <div class="form1  ">
+                       </div>
+                   </div>
+                   <div class="col-12">
+                       <div class="form3 color-fondo-darkblue4 ">  
+                       </div>
+                   </div>
+               </div>
+   
+               <div class="form2 position-absolute start-50 translate-middle-x color-fondo-darkblue3">
+                   <h5 class="text-center py-4">Get early acces today</h5>
+                   <p class="text-center py-2">It only takes a minute to sign up and our free starter tier is extremely generous. If you have any <br> questions, our support team would be happy to help you</p>
+   
+                   <form class="text-center">
+                       <input type="text" name="texto" id="texto" class="mx-2">
+                       <button  type="submit" class="btn btn-info mx-auto  text-white rounded-pill px-custom-boton fw-bold">Get Started for free</button>
+                   </form>
+          
+           </div>
+   
+        </div>
+       </section>
+   
+   <!-- PARTE FINAL : FOOTER-->
+       <section class="color-fondo-darkblue4 parte-final-footer"> 
+          
+                <div class="row">
+                        <div class="col-sm-12 col-md py-4">
+                            <img src="./imagenes/logo.svg" alt="este es el logo" class="img-fluid tamaño-logo">
+                        </div>
+                </div>
+               <div class="row ">
+                   <div class="col-sm-12 col-md ">
+    
+                       <p><img src="./imagenes/icon-location.svg" alt="">Lorem ipsum dolor sit amet elit. Soluta nam libero molestiae dolorum eaque neque officia explicabo blanditiis.</p>
+                   </div>
+   
+                   <div class="col-sm-12 col-md">
+                       <p><img src="./imagenes/icon-phone.svg" alt="">+1-543-123-4567</p>
+                       <p><img src="./imagenes/icon-email.svg" alt="">example@fylo.com</p>
+                   </div>
+   
+   
+                   <div class="col-sm-12 col-md">
+                       <ol>
+                           <li>About Us</li>
+                           <li>Jobs</li>
+                           <li>Press</li>
+                           <li>Blog</li>
+                       </ol>
+                   </div>
+   
+                   <div class="col-sm-12 col-md">
+                       <ol>
+                           <li>Contact Us</li>
+                           <li>Terms</li>
+                           <li>Privacy</li>
+                       </ol>
+                   </div>
+   
+                   <div class="col-sm-12 col-md">
+                       <i class="bi bi-facebook"></i>
+                       <i class="bi bi-twitter"></i>
+                       <i class="bi bi-instagram"></i>
+                   </div>
+                   
+   
+               </div>
+       
+   
+       </section>
+   
+  </footer>
     
 </body>
 </html>

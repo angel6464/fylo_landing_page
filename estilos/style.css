@@ -5,10 +5,11 @@
     padding: 0;
     color: #fff;
     Font-size: 14px;
-    font-family:sans-serif;
-   font-weight: 400,700;
+    font-family: 'Open Sans', sans-serif;
+
+   
    box-sizing: border-box;
-   overflow-x: hidden; /* Oculta el desbordamiento horizontal */
+
    
 }
 
@@ -24,6 +25,17 @@
     color:#fff;
 }
 
+/**Color de fondo blue oscuro*/
+.color-fondo-darkblue3{
+    background-color: hsl(218, 26%, 18%);
+    color:#fff;
+}
+
+/**color para el footer*/
+.color-fondo-darkblue4{
+    background-color: hsl(216, 53%, 9%);
+    color:#fff;
+}
 
 /**Colocamos z index para la imagen svg de fondo */
 .seccion-introduccion {
@@ -58,8 +70,6 @@ ul{
     margin: 0;
 }
 
-
-
 ul li {
     margin-right: 20px;
     transition: color 0.3s;
@@ -91,22 +101,108 @@ ul li a {
 }
 
 /** Esto para la caja*/
-.espacio-caja{
+.espacio-caja-team{
     padding-top: 80px;
-    padding-bottom: 100px;
+    padding-bottom: 50px;
 }
 
 /** Espacio para el texto*/
-.espacio-caja .espacio-caja-texto{
+.espacio-caja-team .espacio-caja-texto-team{
     padding-top: 100px;
 }
 
 /**tamaño de letra del h3*/
-.espacio-caja .espacio-caja-texto h3{
+.espacio-caja-team .espacio-caja-texto-team h3{
     font-size: 50px;
 }
 
 /** tamaño de letra para el parrafo*/
-.espacio-caja .espacio-caja-texto p{
-    font-size: 20px;
+.espacio-caja-team .espacio-caja-texto-team p{
+    font-size: 15px;
+}
+
+/**Estilos comentarios de perfiles-----------------------*/
+
+/**imagen de comillas al fondo*/
+.comentarios-personas {
+    padding: 100px 200px;
+    position: relative;
+    z-index: 1;
+}
+
+.comentarios-personas::before {
+    content: "";
+    position: absolute;
+  bottom: 110px;
+    width: 40%;
+    height: 100%; 
+    background-image: url("../imagenes/bg-quotes.png");
+    background-position: left;
+    background-repeat: no-repeat;
+    padding: 100px 200px;
+    z-index: -1;
+ 
+}
+
+h6{
+    font-weight: bold;
+}
+.p-ocupacion{
+    font-size: 11px;
+    
+}
+
+
+/*para sobreponer en medio el div que lleva un pequeño formulario*/
+.form1 {
+    height: 150px;
+}
+
+.form2 {
+    width: 60%;
+    height: 220px;
+    top: 60px; /* Centra el div .form2 entre .form1 y .form3 */
+    z-index: 10;
+    
+}
+
+.form3 {
+    height: 200px;
+    width: 100%;
+}
+
+
+/*Para centrar el formulario*/
+form input{
+    padding:8px 140px;
+    border-radius: 50px;
+
+}
+
+/*para ocultar cuando algun elemento de sobrepase*/
+footer{
+    overflow-x: hidden;
+}
+
+/*stilo de listas del footer*/
+ol li{
+    text-decoration: none;
+    list-style-type: none;
+    padding: 8px;
+}
+
+/* para que los iconos de redes sociales tengan padding*/
+i{
+    padding: 4px;
+    &:hover{
+        color:aqua;
+    }
+}
+
+.parte-final-footer{
+  
+    padding-left:150px;
+ 
+    
+    
 }
