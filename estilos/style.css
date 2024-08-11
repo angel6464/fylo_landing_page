@@ -100,6 +100,8 @@ ul li a {
 
 }
 
+
+
 /** Esto para la caja*/
 .espacio-caja-team{
     padding-top: 80px;
@@ -179,9 +181,21 @@ form input{
 
 }
 
+/*boton del formulario*/
+.px-custom-boton2 {
+    padding: 8px 50px;
+
+}
+
 /*para ocultar cuando algun elemento de sobrepase*/
 footer{
     overflow-x: hidden;
+}
+
+/*espacio izquierdo del footer*/
+.parte-final-footer{
+    padding-left:150px;
+    
 }
 
 /*stilo de listas del footer*/
@@ -199,10 +213,318 @@ i{
     }
 }
 
+
+/*uso de media query para responsive 576px*/
+
+@media(max-width: 576px){
+    
+    /*Tamaño de imagen princiapl mas pequeño*/
+    .tamaño-img-portada{
+        max-width: 300px;
+        padding-top: 60px;
+       
+    }
+
+    h1{
+        font-size: 26px;
+        font-style: normal; /* Corrige a 'normal' para eliminar el estilo cursiva */
+        padding: 0px 30px;
+        padding-bottom: 20px;
+        padding-top: 20px;
+    }
+
+    /*display none para quitarle los saltos de linea*/
+    h1 br{
+       display: none; 
+    }
+
+    .seccion-introduccion .container p {
+        padding: 20px 65px; 
+
+    }
+
+    /*para quitarle los saltos de linea*/
+    .seccion-introduccion .container p br{
+        display: none; 
+    }
+
+    .seccion-introduccion {
+        padding-bottom: 110px; /* Menos padding en pantallas muy pequeñas */
+    }
+
+    .seccion-introduccion::before {
+        height: 100%; /*   altura para pantallas más pequeñas */
+       background-size: 400%; /* imagen se ajusta en pantallas pequeñas */
+       background-repeat: no-repeat;
+    }
+
+    /*Para quitarle los saltos de linea*/
+    .seccion2 article p br{
+        display: none;
+
+    }
+
+    .seccion2{
+        padding-bottom: 60px;
+    }
+    .seccion2 .row{
+        padding: 0 50px;
+        }
+        
+
+    .seccion2 .col-md{
+    padding-top: 70px;
+    }
+
+    
+
+    .seccion3 img{
+        max-width: 100%;
+        height: auto;
+    }
+
+
+    .espacio-caja-team{
+        padding-top: 10px;
+        padding-bottom: 50px;
+    }
+    
+    .seccion3 .espacio-caja-texto-team h3{
+        font-size: 16px;
+    }
+
+    .seccion3 .espacio-caja-texto-team h3 br{
+        display: none;
+    }
+
+    .espacio-caja-team .espacio-caja-texto-team p{
+        font-size: 13px;
+    }
+
+    .seccion3 .espacio-caja-texto-team p br{
+        display: none;
+    }
+
+    .espacio-caja-team .espacio-caja-texto-team{
+        padding-top: 40px;
+    }
+    .comentarios-personas {
+        padding: 100px 30px;
+    }
+
+    .comentarios-personas .col-12{
+        padding-top: 40px;
+    }
+
+/*estilos para subir un poco la iamgen de comillas */
+    .comentarios-personas::before {
+    bottom: 335px;
+    margin-left: 20px;
+      
+     
+    }
+    /*ESTILOS PARA EL FOOTER*/
+
+/*estilos para la seccion de se sobrepone*/
+    .form1 {
+        height: 310px;
+        width: 100%;
+    }
+    
+    .form2 {
+        width: 90%;
+        height: 390px;
+        border-radius: 20px;
+        
+        
+    }
+    
+    form input{
+        padding:17px 80px;
+        border-radius: 50px;
+        
+    }
+
+    .form3 {
+        height: 200px;
+        width: 100%;
+    }
+
+    /*boton del formulario*/
+.px-custom-boton2 {
+    padding: 17px 100px;
+    margin-top: 20px;
+    border-radius: 50px;
+
+}
+
 .parte-final-footer{
-  
-    padding-left:150px;
- 
+    padding-top: 10px;
+   padding-left:40px;
     
+}
+
+.parte-final-footer .row:first-of-type img{
+    height: auto;
+    width: 200px;
+    padding-left: 40px;
+}
+
+.parte-final-footer .row:last-of-type span{
+    padding-right: 40px;
+
+}
+
+
+/*stilo de listas del footer*/
+ol li{
+    text-decoration: none;
+    list-style-type: none;
+    padding: 8px;
+}
+
+/* para que los iconos de redes sociales tengan padding*/
+i{
+    padding: 4px;
+    &:hover{
+        color:aqua;
+    }
+}
     
+.centrar-iconos{
+    text-align: center;
+    padding-bottom: 30px;
+}
+}
+
+
+
+
+/**Uso de media query para responsive 768px*/
+/**Uso de media query para responsive 768px*/
+@media(max-width: 835px){
+    
+    /* Ajuste de tamaño de fuente para encabezados */
+    h1 {
+        font-size: 28px;
+        padding: 0px 30px;
+        padding-bottom: 20px;
+        padding-top: 20px;
+    }
+
+    /* Ajuste de padding en contenedor de la sección de introducción */
+    .seccion-introduccion .container p {
+        padding: 20px 50px;
+    }
+
+    /* Ajuste de la imagen de fondo para la sección de introducción */
+    .seccion-introduccion::before {
+        height: 80%;
+        background-size: 300%;
+        background-repeat: no-repeat;
+    }
+
+    /* Ajuste de padding en la segunda sección */
+    .seccion2 {
+        padding-bottom: 80px;
+    }
+
+    .seccion2 .row {
+        padding: 0 30px;
+    }
+
+    .seccion2 .col-md {
+        padding-top: 50px;
+    }
+
+    /* Ajuste de imagen en la tercera sección */
+    .seccion3 img {
+        max-width: 90%;
+        height: auto;
+    }
+
+    /* Ajuste de espacio en la caja del equipo */
+    .espacio-caja-team {
+        padding-top: 30px;
+        padding-bottom: 60px;
+    }
+
+    /* Ajuste de tamaño de fuente en los títulos del equipo */
+    .seccion3 .espacio-caja-texto-team h3 {
+        font-size: 18px;
+    }
+
+    /* Ajuste de tamaño de fuente en los párrafos del equipo */
+    .espacio-caja-team .espacio-caja-texto-team p {
+        font-size: 14px;
+    }
+
+    /* Ajuste de padding en la sección de comentarios */
+    .comentarios-personas {
+        padding: 100px 20px;
+    }
+
+    .comentarios-personas .col-12 {
+        padding-top: 50px;
+    }
+
+    /* Ajuste de tamaño y posición de formularios */
+    .form1 {
+        height: 340px;
+        width: 100%;
+    }
+
+    .form2 {
+        width: 85%;
+        height: 400px;
+        border-radius: 20px;
+    }
+
+    .form3 {
+        height: 220px;
+        width: 100%;
+    }
+
+    form input {
+        padding: 15px 70px;
+        border-radius: 50px;
+    }
+
+    .px-custom-boton2 {
+        padding: 15px 90px;
+        border-radius: 50px;
+    }
+
+    /* Ajuste de padding en el footer */
+    .parte-final-footer {
+        padding-top: 20px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .parte-final-footer .row:first-of-type img {
+        height: auto;
+        width: 180px;
+        padding-left: 30px;
+    }
+
+    /* Ajuste de padding en las listas del footer */
+    ol li {
+        padding: 6px;
+    }
+
+    /* Ajuste de padding en los iconos de redes sociales */
+    i {
+        padding: 3px;
+    }
+
+    .centrar-iconos {
+        text-align: center;
+        padding-bottom: 20px;
+    }
+
+    .seccion2 article p br{
+        display: none;
+
+    }
 }
