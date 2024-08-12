@@ -7,6 +7,7 @@
     font-family: 'Open Sans', sans-serif;
    box-sizing: border-box;
    color: #e6e6e6;
+ 
    
 }
 
@@ -226,6 +227,11 @@ i{
 /*uso de media query para responsive 576px*/
 
 @media(max-width: 576px){
+
+    * {
+        overflow-x:hidden;
+     
+    }
     
     /*Tamaño de imagen princiapl mas pequeño*/
     .tamaño-img-portada{
@@ -417,6 +423,11 @@ i{
 /**Uso de media query para responsive 768px*/
 /**Uso de media query para responsive 768px*/
 @media(max-width: 835px){
+
+    * {
+        overflow-x:hidden;
+     
+    }
     
     /* Ajuste de tamaño de fuente para encabezados */
     h1 {
